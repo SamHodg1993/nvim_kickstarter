@@ -40,5 +40,5 @@ vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', opts)
 -- buffer keybindings
 vim.keymap.set('n', '<Tab>', ':bnext<CR>', opts) -- next buffer
 vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', opts) -- previous buffer
-vim.keymap.set('n', '<leader>x', ':bnext<CR>', opts) -- close buffer
-vim.keymap.set('n', '<leader>b', '<cmd> enew <CR>', opts) -- new buffer
+vim.keymap.set('n', '<leader>bd', ':bdelete!<CR>', opts) -- close buffer
+vim.keymap.set('n', '<leader>bc', '<cmd> enew<CR>', opts) -- new buffer
