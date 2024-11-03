@@ -2,6 +2,7 @@ require 'custom.keybinds'
 require 'custom.set'
 require 'custom.colours'
 require 'custom.netrw'
+--
 -- Need to complete the video at 27 mins -- https://www.youtube.com/watch?v=KYDG3AHgYEs&t=58s
 -- Want to add configs to autocomplete jsx tags etc...
 vim.opt.completeopt = { 'menuone', 'noinsert' }
@@ -700,7 +701,7 @@ require('lazy').setup({
           -- Select the [n]ext item
           ['<C-n>'] = cmp.mapping.select_next_item(),
           -- Select the [p]revious item
-          -- ['<C-p>'] = cmp.mapping.select_prev_item(), -- This is the default setting -- Changing mine to be ctrl + enter
+          -- ['<C-p>'] = cmp.mapping.select_prev_item(), -- This is the default setting -- Changing mine to be ctrl + entee
           ['<C-m>'] = cmp.mapping.select_prev_item(),
 
           -- Scroll the documentation window [b]ack / [f]orward
