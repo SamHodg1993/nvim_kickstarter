@@ -2,9 +2,8 @@ require 'custom.keybinds'
 require 'custom.set'
 require 'custom.colours'
 require 'custom.netrw'
---
--- Need to complete the video at 27 mins -- https://www.youtube.com/watch?v=KYDG3AHgYEs&t=58s
--- Want to add configs to autocomplete jsx tags etc...
+require('luasnip.loaders.from_lua').load { paths = '~/.config/nvim/lua/custom/snuppets.lua' }
+
 vim.opt.completeopt = { 'menuone', 'noinsert' }
 
 -----------------------------------------------------------------------------------------------------------------------------
@@ -13,7 +12,7 @@ vim.opt.completeopt = { 'menuone', 'noinsert' }
 -----------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------
 
-vim.g.mapleader = ' '
+vim.g.mapleaer = ' '
 vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = true
