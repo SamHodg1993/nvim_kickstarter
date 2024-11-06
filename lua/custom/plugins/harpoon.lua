@@ -10,6 +10,7 @@ return {
 
     harpoon:setup {}
 
+    -- Control and view harpoon
     vim.keymap.set('n', '<leader>a', function()
       harpoon:list():append()
     end)
@@ -17,6 +18,7 @@ return {
       harpoon.ui:toggle_quick_menu(harpoon:list())
     end)
 
+    -- Move directly to a file.
     vim.keymap.set('n', '<C-h>', function()
       harpoon:list():select(1)
     end)
