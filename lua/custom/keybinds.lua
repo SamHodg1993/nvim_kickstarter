@@ -38,7 +38,11 @@ vim.keymap.set('n', '<C-h>', ':wincmd h<CR>', opts)
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', opts)
 
 -- buffer keybindings
-vim.keymap.set('n', '<Tab>', ':bnext<CR>', opts) -- next buffer
-vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', opts) -- previous buffer
-vim.keymap.set('n', '<leader>bd', ':bdelete!<CR>', opts) -- close buffer
-vim.keymap.set('n', '<leader>bc', '<cmd> enew<CR>', opts) -- new buffer
+-- vim.keymap.set('n', '<Tab>', ':bnext<CR>', opts) -- next buffer
+-- vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', opts) -- previous buffer
+-- vim.keymap.set('n', '<leader>bd', ':bdelete!<CR>', opts) -- close buffer
+-- vim.keymap.set('n', '<leader>bc', '<cmd> enew<CR>', opts) -- new buffer
+
+vim.keymap.set('n', '<leader>l', 'yyp0d$', opts) -- Creates a new line without entering insert mode
+
+vim.keymap.set('n', '<leader>cls', '0d$', opts) -- Clears the line of all text
